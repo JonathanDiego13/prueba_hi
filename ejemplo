@@ -1,0 +1,124 @@
+{
+	"order":{
+		"id": 1, 
+		"channel_id": 1, 
+		"pos_id": 2, 
+		"user_email": "jonathan.mdzmtz@gmail.com", 
+		"user_first_name": "Jonathan Diego", 
+		"user_last_name": "Mendoza Mart\u00ednez", 
+		"order_number": 171114414567, 
+		"sub_total_price": "17860.00", 
+		"sub_total_special_price": "17860.00", 
+		"coupon_discount": "0.00", 
+		"discount": "0.00", 
+		"grand_total": "17860.00", 
+		"user_id": 1, 
+		"total_discount": "0.00", 
+		"seller_id": null
+	}, 
+	"payments": [
+			{
+				"id": 1, 
+				"order_value": "17860.00", 
+				"amount_paid": "17860.00", 
+				"payment_method": "credit_card", 
+				"payment_provider": null, 
+				"payment_date": null, 
+				"payment_token": null, 
+				"payment_receipt_number": null, 
+				"fraud_score": "10.00", 
+				"internal_fraud_score": "67.00", 
+				"card_type": null, 
+				"card_brand": null, 
+				"bank": null, 
+				"number_of_installments": 0, 
+				"cc_expiry_month": 0, 
+				"cc_expiry_year": null, 
+				"cc_last_four_digits": null, 
+				"cc_owner_name": "", 
+				"cc_bin": null, 
+				"additional_information": null, 
+				"created_at": "2018-02-01 16:52:06", 
+				"card_token": null, 
+				"oxxo_bar_code": null, 
+				"oxxo_expiry_date": null, 
+				"pp_last_correlation_id": null, 
+				"pp_last_transaction_id": null, 
+				"pp_merchant_protection": null, 
+				"pp_payer_email": null, 
+				"pp_payer_id": null, 
+				"pp_payer_status": null, 
+				"card_payment_method": null
+			}
+	], 
+	"items": [
+			{
+				"id": 1, 
+				"sku": "AL1002", 
+				"b_id": 0, 
+				"b_sequence": 0, 
+				"name": "Almohada Regular", 
+				"coupon_discount": "0.00", 
+				"grand_total": "790.00", 
+				"created_at": "2017-11-14 14:19:58", 
+				"special_price": "790.00", 
+				"address": {
+					"id": 2, 
+					"n_int": "10", 
+					"n_ext": "77", 
+					"street": "NIza", 
+					"colony": "Ju\u00e1rez", 
+					"city": "Cuauht\u00e9moc", 
+					"state": "Ciudad de M\u00e9xico", 
+					"postal_code": 6600, 
+					"latitude": "19.424512", 
+					"longitude": "-99.161672", 
+					"phone_number": 5523097299, 
+					"additional_information": "", 
+					"additional_number": null
+				}, 
+				"desired_carrier": {
+					"id": 3, 
+					"desired_delivery_date": "2017-12-01", 
+					"desired_delivery_end_time": "14:00:00", 
+					"desired_delivery_start_time": "8:00:00"
+				}
+			},
+			{
+				"id": 2, 
+				"sku": "AL1003", 
+				"b_id": 0, 
+				"b_sequence": 0, 
+				"name": "Almohada King", 
+				"coupon_discount": "0.00", 
+				"grand_total": "1090.00", 
+				"created_at": "2017-11-14 14:19:58", 
+				"special_price": "1090.00", 
+				"address": {
+					"id": 3, 
+					"n_int": "10", 
+					"n_ext": "77", 
+					"street": "NIza", 
+					"colony": "Ju\u00e1rez", 
+					"city": "Cuauht\u00e9moc", 
+					"state": "Ciudad de M\u00e9xico", 
+					"postal_code": 6600, 
+					"latitude": "19.424512", 
+					"longitude": "-99.161672", 
+					"phone_number": 5523097299, 
+					"additional_information": "", 
+					"additional_number": null
+				}, 
+				"desired_carrier": {
+					"id": 3, 
+					"desired_delivery_date": "2017-12-01", 
+					"desired_delivery_end_time": "14:00:00", 
+					"desired_delivery_start_time": "8:00:00"
+				}
+			},
+	]
+} 
+
+
+
+{"id": 3, "sku": "LU1001", "b_id": 0, "b_sequence": 0, "name": "Colch\u00f3n Individual", "coupon_discount": "0.00", "grand_total": "7990.00", "created_at": "2017-11-14 14:19:58", "special_price": "7990.00", "address": {"id": 4, "n_int": "10", "n_ext": "77", "street": "NIza", "colony": "Ju\u00e1rez", "city": "Cuauht\u00e9moc", "state": "Ciudad de M\u00e9xico", "postal_code": 6600, "latitude": "19.424512", "longitude": "-99.161672", "phone_number": 5523097299, "additional_information": "", "additional_number": null}, "desired_carrier": {"id": 3, "desired_delivery_date": "2017-12-01", "desired_delivery_end_time": "14:00:00", "desired_delivery_start_time": "8:00:00"}}, {"id": 4, "sku": "LU1001", "b_id": 0, "b_sequence": 0, "name": "Colch\u00f3n Individual", "coupon_discount": "0.00", "grand_total": "7990.00", "created_at": "2017-11-14 14:19:58", "special_price": "7990.00", "address": {"id": 5, "n_int": "10", "n_ext": "77", "street": "NIza", "colony": "Ju\u00e1rez", "city": "Cuauht\u00e9moc", "state": "Ciudad de M\u00e9xico", "postal_code": 6600, "latitude": "19.424512", "longitude": "-99.161672", "phone_number": 5523097299, "additional_information": "", "additional_number": null}, "desired_carrier": {"id": 3, "desired_delivery_date": "2017-12-01", "desired_delivery_end_time": "14:00:00", "desired_delivery_start_time": "8:00:00"}}]}

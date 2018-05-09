@@ -1,0 +1,23 @@
+RVM
+httpparty
+
+rails 5.2
+version de ruby
+
+rails new logicalapi --api --database=MYSQL
+
+
+
+github
+boton start a project
+
+directorio del proyecto igual nombre del proyecto en github
+
+
+
+git init en mi proyecto
+
+git add 
+git commit
+seguir la instucciones que el mismo github meda 
+

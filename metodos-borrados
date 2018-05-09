@@ -1,0 +1,121 @@
+##############################################################################################3
+ORDER_SHIPPING
+
+
+def get_items_information_by_items_id(items_id):
+    items_id = ",".join(map(str, items_id))
+    items = db.execute_mysql_query(
+        query=f"""
+              SELECT oi.id, 
+                     catalog_product_child_sku, 
+                     bundle_id, 
+                     bundle_sequence,
+                     name,                     
+                     price,
+                     special_price,
+                     discount,
+                     grand_total,
+                     created_at, 
+                     created_by,
+                     coupon_discount,
+                     total_discount,
+                     oisa.*  
+              FROM order_item AS oi INNER JOIN order_item_shipping_address AS oisa
+              ON oi.id = oisa.order_item_id
+              WHERE oi.id in ({items_id})
+            """
+    )
+
+    items_dict = []
+
+    for item in items:
+        items_dict.append({
+            'id': item[0],
+            'sku': item[1],
+            'b_id': item[2],
+            'b_sequence': item[3],
+            'name': item[4].replace("'", " ").replace('"', " ").strip(),
+            'price': item[5],
+            'special_price': item[6],
+            'discount': item[7],
+            'grand_total': item[8],
+            'created_at': item[9],
+            'created_by': item[10],
+            'coupon_discount': item[11],
+            'total_discount': item[12],
+            'address_id': item[9],
+            'n_int': item[10],
+            'n_ext': item[11],
+            'street': item[12],
+            'colony': item[13],
+            'city': item[14],
+            'state': item[15],
+            'postal_code': item[16],
+            'latitude': item[17],
+            'longitude': item[18],
+            'phone_number': item[19],
+            'additional_information': item[20],
+            'additional_number': item[21],
+            'desired_carrier_id': item[22],
+            'desired_delivery_date': item[23],
+            'desired_delivery_end_time': item[24],
+            'desired_delivery_start_time': item[25]
+    })
+
+    return items_dict
+
+
+def get_items_information_by_order_id(order_id):
+    items = db.execute_mysql_query(
+        query=f"""
+              SELECT 
+                    oi.id, 
+                    catalog_product_child_sku, 
+                    bundle_id, 
+                    bundle_sequence, 
+                    name, 
+                    coupon_discount, 
+                    grand_total, 
+                    created_at, 
+                    special_price,
+                    oisa.* 
+              FROM order_item AS oi INNER JOIN order_item_shipping_address AS oisa
+              ON oi.id = oisa.order_item_id
+              WHERE oi.order_id = {order_id}
+            """
+    )
+
+    items_dict = []
+
+    for item in items:
+        items_dict.append({
+            'id': item[0],
+            'sku': item[1],
+            'b_id': item[2],
+            'b_sequence': item[3],
+            'name': item[4].replace("'", " ").replace('"', " ").strip(),
+            'coupon_discount': item[5],
+            'grand_total': item[6],
+            'created_at': item[7],
+            'special_price': item[8],
+            'address_id': item[9],
+            'n_int': item[10],
+            'n_ext': item[11],
+            'street': item[12],
+            'colony': item[13],
+            'city': item[14],
+            'state': item[15],
+            'postal_code': item[16],
+            'latitude': item[17],
+            'longitude': item[18],
+            'phone_number': item[19],
+            'additional_information': item[20],
+            'additional_number': item[21],
+            'desired_carrier_id': item[22],
+            'desired_delivery_date': item[23],
+            'desired_delivery_end_time': item[24],
+            'desired_delivery_start_time': item[25]
+    })
+
+    return items_dict
+
