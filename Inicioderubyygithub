@@ -21,3 +21,13 @@ git add
 git commit
 seguir la instucciones que el mismo github meda 
 
+
+
+
+echo "# prueba_hi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/JonathanDiego13/prueba_hi.git
+git push -u origin master
+
